@@ -5,6 +5,11 @@ billiard
 
 About
 -----
+This is the same billiard you will find in celery/billiard @github. The changes I have made to it makes it 
+possible to use this on App Engine which is pretty hostile to multithreading and multiprocessing. Also 
+changed: I forked the celery/celery and celery/py-amqp. Together, all these changes make it possible to use this 
+celery + billiard + py-ampq combo to piublish from app engine. 
+I have only ever tested this for a RabbitMQ broker running on Compute Engine.
 
 `billiard` is a fork of the Python 2.7 `multiprocessing <http://docs.python.org/library/multiprocessing.html>`_
 package. The multiprocessing package itself is a renamed and updated version of
