@@ -35,6 +35,7 @@ if sys.version_info < (3, 3):
 
     import platform
     SYSTEM = platform.system()
+    SYSTEM = None
 
     if SYSTEM == 'Darwin':
         import ctypes

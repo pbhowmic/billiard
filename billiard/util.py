@@ -40,14 +40,7 @@ __all__ = [
 #
 # Logging
 #
-
-NOTSET = 0
-SUBDEBUG = 5
-DEBUG = 10
-INFO = 20
-SUBWARNING = 25
-ERROR = 40
-
+from .loglevels import SUBDEBUG, SUBWARNING
 LOGGER_NAME = 'multiprocessing'
 DEFAULT_LOGGING_FORMAT = '[%(levelname)s/%(processName)s] %(message)s'
 

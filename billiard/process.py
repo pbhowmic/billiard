@@ -22,7 +22,6 @@ import binascii
 import logging
 import threading
 
-from multiprocessing import process as _mproc
 
 from .compat import bytes
 try:
@@ -49,6 +48,7 @@ def current_process():
 
 
 def _set_current_process(process):
+    from multiprocessing import process as _mproc
     global _current_process
     _current_process = _mproc._current_process = process
 

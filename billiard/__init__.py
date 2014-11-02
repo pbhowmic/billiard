@@ -58,7 +58,7 @@ from .exceptions import (  # noqa
     WorkerLostError,
 )
 from .process import Process, current_process, active_children
-from .util import SUBDEBUG, SUBWARNING
+from .loglevels import SUBDEBUG, SUBWARNING
 
 
 def ensure_multiprocessing():
